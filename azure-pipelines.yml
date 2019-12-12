@@ -11,6 +11,7 @@ pool:
 variables:
   imageName: 'pipelines-javascript-docker'
   dockerHub: 'Docker Registry'
+  login: ochyzhyk
 
 steps:
 - task: Docker@2
@@ -21,11 +22,11 @@ steps:
     Dockerfile: Dockerfile
 
 - task: Docker@2
-  displayName: Push image/
+  displayName: Push image
   inputs:
     containerRegistry: |
       $(dockerHub)
-    repository: 'ochyzhyk/pipelines-javascript-docker'
+    repository: $(login)/$(imageName)
     command: push
     tags: |
       1.1
