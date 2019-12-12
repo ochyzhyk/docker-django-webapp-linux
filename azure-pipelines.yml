@@ -28,5 +28,3 @@ steps:
       $(dockerHub)
     repository: $(login)/$(imageName)
     command: push
-    tags: |
-      1.1
