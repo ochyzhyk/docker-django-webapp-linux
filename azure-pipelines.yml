@@ -28,4 +28,4 @@ steps:
     repository: $(imageName)
     command: push
     tags: |
-      latest
+      ochyzhyk/pipelines-javascript-docker:1.1
