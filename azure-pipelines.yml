@@ -10,7 +10,7 @@ pool:
 
 variables:
   imageName: 'pipelines-javascript-docker'
-  dockerHub: 'Docker Registry'
+  dockerHub: 'ChyzhykACR'
   login: chyzhykcr.azurecr.io
 
 steps:
