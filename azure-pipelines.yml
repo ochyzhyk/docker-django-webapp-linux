@@ -11,7 +11,7 @@ pool:
 variables:
   imageName: 'pipelines-javascript-docker'
   dockerHub: 'Docker Registry'
-  login: ochyzhyk
+  login: chyzhykcr.azurecr.io
 
 steps:
 - task: Docker@2
