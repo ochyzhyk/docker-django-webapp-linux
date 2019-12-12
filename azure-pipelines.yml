@@ -28,3 +28,4 @@ steps:
       $(dockerHub)
     repository: $(login)/$(imageName)
     command: push
+    tags: 'latest'
