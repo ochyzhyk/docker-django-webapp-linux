@@ -21,11 +21,11 @@ steps:
     Dockerfile: Dockerfile
 
 - task: Docker@2
-  displayName: Push image
+  displayName: Push image/
   inputs:
     containerRegistry: |
       $(dockerHub)
-    repository: $(imageName)
+    repository: 'ochyzhyk/pipelines-javascript-docker'
     command: push
     tags: |
-      ochyzhyk/pipelines-javascript-docker:1.1
+      1.1
