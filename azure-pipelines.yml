@@ -10,6 +10,7 @@ pool:
 
 variables:
   imageName: 'pipelines-javascript-docker'
+  dockerHub: 'Docker Registry'
 
 steps:
 - task: Docker@2
