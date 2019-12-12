@@ -17,7 +17,7 @@ steps:
 - task: Docker@2
   displayName: Build an image
   inputs:
-    repository: $(login)/$(imageName)
+    repository: $(imageName)
     command: build
     Dockerfile: Dockerfile
 
@@ -26,6 +26,6 @@ steps:
   inputs:
     containerRegistry: |
       $(dockerHub)
-    repository: $(login)/$(imageName)
+    repository: $(imageName)
     command: push
     tags: $(build.buildid)
